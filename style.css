@@ -1,0 +1,101 @@
+/* Meng-import Font dari Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@500&display=swap');
+
+body {
+    font-family: 'Gabarito', cursive;
+
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+
+    /* Scrolling */
+    overflow-x: hidden;
+
+    /* Jika ingin menggunakan gambar sebagai Background */
+    /* Gunakan properti background-image */
+    background-image: url(asset/BackgroundN.jpeg);
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    /* Mengatur tata letak element dengan Flexbox */
+    /* Posisi Element: tengah */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+    /* Set the Container style */
+    .container {
+        /* CSS Style */
+    /* Set width of the container */ 
+    width: 91%;
+    max-width: 680px;
+    margin: 10px;
+    padding: 50px 0px 100px 0px;
+
+    /* Mengatur tata Letak element dengan Flexbox */
+    /* Posisi Element: tengah */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+/* Set the profile image */
+.img-container img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+/* Set the title and description */
+.title-container {
+    /* Tata letak */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+
+    color: black;
+}
+/* Set the Link Item Elements */
+.link-item {
+    width: 100%;
+    height: 56px;
+    margin: 16px;
+    border-radius: 20px;
+    /* Text Color and Background Color */
+    color: beige;
+    text-decoration: none;
+    background-color: rgb(37, 37, 37);
+
+    /* Tata Letak */
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/* Set the icons */
+.icon {
+    margin: 3px 8px;
+    width: 44px;
+    height: 44px;
+}
+
+/* Coba ke tengahin sedikit */
+.link-item {
+    margin-right: 60px;
+}
+
+/* Apa yang akan terjadi jika Mouse berada di atas element */
+/* Itulah yang disebut dengan sifat hover */
+.link-item:hover  {
+    transition: cubic-bezier( .07, 1.41, .82, 1.41) 0.2s;
+    transform: scale(1.02);
+
+    background-color: rgb(72, 66, 66);
+}
+
+
+
